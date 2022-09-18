@@ -1,8 +1,8 @@
 import List from "./components/List";
 import React, { useState } from "react";
-import { useCallback, useMemo } from "react";
+import { useCallback } from "react";
 
-export default function Home() {
+const useCallbackExample = () => {
   const [number, setNumber] = useState(1);
   const [dark, setDark] = useState(false);
 
@@ -28,4 +28,6 @@ export default function Home() {
       </div>
     </>
   );
-}
+};
+
+export default useCallbackExample;
